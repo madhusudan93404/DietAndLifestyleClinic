@@ -35,7 +35,7 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container">
-        <h2>Our Services</h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">Our Services</h3>
         <p className="section-subtitle">Comprehensive nutrition solutions for every stage of life</p>
         <div className="services-grid">
           {services.map((service, index) => (

@@ -199,6 +199,7 @@ body {
   background: #f8f9fa;
 }
 
+
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -511,7 +512,7 @@ body {
 @media (max-width: 768px) {
   .blog-section h3,
   .vlog-section h3  {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2d5016;
     margin-bottom: 0rem;
   }

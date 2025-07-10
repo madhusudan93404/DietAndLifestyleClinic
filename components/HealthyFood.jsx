@@ -41,7 +41,7 @@ const HealthyFood = () => {
   return (
     <section id="healthy-food" className="healthy-food">
       <div className="container">
-        <h2>The Importance of Healthy Food</h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">The Importance of Healthy Food</h3>
         <p className="section-subtitle">Discover how proper nutrition can transform your life and well-being</p>
 
         <div className="benefits-grid">

@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Get In Touch</h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">Get In Touch</h3>
         <p className="section-subtitle">Ready to start your health journey? Contact us today!</p>
 
         <div className="contact-content">

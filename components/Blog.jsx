@@ -58,7 +58,7 @@ const Blog = () => {
   return (
     <section id="blog" className="blog">
       <div className="container">
-        <h2>Latest Blog Posts & Vlogs</h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">Latest Blog Posts & Vlogs</h3>
 
         <div className="blog-section">
           <h3>Recent Articles</h3>
@@ -78,12 +78,12 @@ const Blog = () => {
 
                     <div className="blog-meta">
                       <span className="blog-date">{post.date}</span>
-                      <button
-                          className="read-more"
-                          onClick={() => toggleExpand(index)}
-                      >
-                        {expandedIndex === index ? "Show Less" : "Read More"}
-                      </button>
+                      {/*<button*/}
+                      {/*    className="read-more"*/}
+                      {/*    onClick={() => toggleExpand(index)}*/}
+                      {/*>*/}
+                      {/*  {expandedIndex === index ? "Show Less" : "Read More"}*/}
+                      {/*</button>*/}
                     </div>
                   </div>
                 </article>

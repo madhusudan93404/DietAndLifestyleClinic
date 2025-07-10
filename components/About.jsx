@@ -3,11 +3,11 @@ import DietOffice from "../public/diet_office.jpg"
 
 const About = () => {
   return (
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-10 py-md-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">
                 About Diet N Life Style Clinic
               </h2>
               <p className="text-gray-700 mb-4">
