@@ -5,6 +5,8 @@ import { useState } from "react"
 import ThumbnailYoutube1 from "../public/Thumbnail_youtube1.avif"
 import ThumbnailYoutube2 from "../public/Thumbnail_youtube2.webp"
 import ThumbnailYoutube3 from "../public/Thumbnail_youtube3.avif"
+import Link from "next/link";
+
 const Blog = () => {
   const [expandedIndex, setExpandedIndex] = useState(null)
   const blogPosts = [
@@ -15,6 +17,7 @@ const Blog = () => {
       image: SuperfoodsforBetterHealth,
       date: "March 15, 2024",
       category: "Nutrition Tips",
+      slug: "/RecentArticle/SuperfoodForBetterHealth"
     },
     {
       title: "Meal Prep Made Easy",
@@ -22,6 +25,7 @@ const Blog = () => {
       image: MealPrepMadeEasy,
       date: "March 10, 2024",
       category: "Meal Planning",
+      slug: "/RecentArticle/MealPrepMadeEasy"
     },
     {
       title: "Understanding Macronutrients",
@@ -29,6 +33,7 @@ const Blog = () => {
       image: UnderstandingMacronutrients,
       date: "March 5, 2024",
       category: "Education",
+      slug: "/RecentArticle/UnderstandingMacronutrients"
     },
   ]
   const toggleExpand = (index) => {
@@ -82,8 +87,9 @@ const Blog = () => {
                       {/*    className="read-more"*/}
                       {/*    onClick={() => toggleExpand(index)}*/}
                       {/*>*/}
-                      {/*  {expandedIndex === index ? "Show Less" : "Read More"}*/}
+                      {/*  Read More*/}
                       {/*</button>*/}
+                      <Link href={post.slug} className="read-more">Read More</Link>
                     </div>
                   </div>
                 </article>

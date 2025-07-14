@@ -1,9 +1,17 @@
+"use client"
+
+import { useState } from "react"
 import Image from 'next/image'
 import DietOffice from "../public/diet_office.jpg"
+import Link from "next/link";
 
 const About = () => {
+  const handleToggleDetails = () => {
+    setShowDetails(!showDetails)
+  }
+
   return (
-      <section id="about" className="py-10 py-md-20 bg-gray-50">
+      <section id="about" className="py-10 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -17,7 +25,6 @@ const About = () => {
                 lifestyle changes.
               </p>
 
-
               <div className="bg-white rounded-lg shadow p-4 md:p-6 mb-6">
                 <h3 className="text-xl font-semibold text-green-800 mb-2">Meet the Dietitian</h3>
                 <p className="text-gray-800 font-medium">Mr. Homesh Mandawliya</p>
@@ -25,6 +32,16 @@ const About = () => {
                 <p className="text-gray-600 text-sm mb-2">Therapist | Dietitian / Nutritionist</p>
                 <p className="text-gray-600 text-sm mb-2">13 Years Experience Overall (10 years as specialist)</p>
                 <p className="italic text-gray-700">"We are giving healthy lifestyle by nature way."</p>
+              </div>
+
+              <div className="flex justify-center mb-6">
+                {/*<button*/}
+                {/*    onClick={handleToggleDetails}*/}
+                {/*    className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full shadow transition duration-300 text-sm md:text-base"*/}
+                {/*>*/}
+                {/*  View More About Dietitian*/}
+                {/*</button>*/}
+                <Link href='/DoctorDetail' className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full shadow transition duration-300 text-sm md:text-base">View More About Dietitian</Link>
               </div>
 
               <div className="flex justify-center mt-6">
@@ -44,11 +61,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div>
+
+            <div className="flex justify-center">
               <Image
                   src={DietOffice}
                   alt="Dietitian consultation"
-                  className="rounded-lg shadow-lg p-3"
+                  className="rounded-lg shadow-lg p-3 object-cover"
               />
             </div>
           </div>

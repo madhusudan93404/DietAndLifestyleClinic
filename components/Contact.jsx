@@ -10,7 +10,7 @@ const Contact = () => {
     service: "",
     message: "",
   })
-
+  const [showToast, setShowToast] = useState(false)
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -22,7 +22,8 @@ const Contact = () => {
     e.preventDefault()
     console.log("Form submitted:", formData)
     // Handle form submission here
-    alert("Thank you for your message! We will get back to you soon.")
+    setShowToast(true)
+    setTimeout(() => setShowToast(false), 3000)
     setFormData({
       name: "",
       email: "",
@@ -34,6 +35,16 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
+
+
+        {showToast && (
+            <div
+                className="fixed top-5 lg:top-16 right-5 bg-green-500 text-white px-4 py-3 rounded shadow-lg animate-slide-in">
+              ✅ Thank you! We’ll get back to you soon.
+            </div>
+        )}
+
+
       <div className="container">
         <h3 className="text-3xl md:text-4xl font-bold text-green-900 mb-6 text-center">Get In Touch</h3>
         <p className="section-subtitle">Ready to start your health journey? Contact us today!</p>

@@ -1,3 +1,4 @@
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
       <footer className="footer">
@@ -9,12 +10,23 @@ const Footer = () => {
                 Your trusted partner in achieving optimal health through personalized nutrition and lifestyle
                 modifications. Transform your life with our expert guidance and evidence-based approach.
               </p>
-              <div className="social-links">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-                <a href="#" aria-label="YouTube">📺</a>
+              <div className="social-links flex gap-4 mt-3 justify-center md:justify-start">
+                <a href="https://www.facebook.com/dietnlifestyleclinic" aria-label="Facebook" target="_blank"
+                   rel="noopener noreferrer">
+                  <FaFacebookF className="text-white-700 hover:text-black-300 text-xl transition-colors duration-300"/>
+                </a>
+                <a href="https://www.instagram.com/homesh_mandawliya/" aria-label="Instagram" target="_blank"
+                   rel="noopener noreferrer">
+                  <FaInstagram className="text-white-700 hover:text-black-900 text-xl transition-colors duration-300"/>
+                </a>
+                <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter className="text-white-700 hover:text-black-900 text-xl transition-colors duration-300"/>
+                </a>
+                <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <FaYoutube className="text-white-700 hover:text-black-900 text-xl transition-colors duration-300"/>
+                </a>
               </div>
+
             </div>
 
             <div className="footer-section">
