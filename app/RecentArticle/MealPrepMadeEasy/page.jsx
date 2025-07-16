@@ -1,7 +1,9 @@
 "use client"
 import Header from "../../../components/Header";
 import Image from 'next/image'
-
+import WhyMealPrep from "../../../public/WhyMealPrep.avif";
+import PlanShopSmart from "../../../public/Plan&ShopSmart.avif";
+import StoreReheatSafely from "../../../public/Store&ReheatSafely.jpg";
 export default function MealPrepMadeEasy() {
     return (
         <>
@@ -10,7 +12,7 @@ export default function MealPrepMadeEasy() {
             {/* Hero section */}
             <section className="relative bg-green-800 text-white">
                 <Image
-                    src="/images/meal-prep-hero.avif"
+                    src={StoreReheatSafely}
                     alt="Meal prep hero"
                     width={1920}
                     height={600}
@@ -34,7 +36,7 @@ export default function MealPrepMadeEasy() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">1. Why Meal Prep?</h2>
                     <Image
-                        src="/images/meal-prep-boxes.avif"
+                        src={WhyMealPrep}
                         alt="Meal prep boxes"
                         width={800}
                         height={400}
@@ -49,7 +51,7 @@ export default function MealPrepMadeEasy() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">2. Plan & Shop Smart</h2>
                     <Image
-                        src="/images/meal-prep-grocery.avif"
+                        src={PlanShopSmart}
                         alt="Grocery shopping for meal prep"
                         width={800}
                         height={400}
@@ -69,7 +71,7 @@ export default function MealPrepMadeEasy() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">3. Store & Reheat Safely</h2>
                     <Image
-                        src="/images/meal-prep-fridge.avif"
+                        src={StoreReheatSafely}
                         alt="Meals stored in fridge"
                         width={800}
                         height={400}

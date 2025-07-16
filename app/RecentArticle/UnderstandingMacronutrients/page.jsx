@@ -2,15 +2,17 @@
 import Header from "../../../components/Header";
 import Image from 'next/image'
 
+import ThePowerofProteins from "../../../public/ThePowerofProteins.jpg";
+import Carbohydrates from "../../../public/Carbohydrates.avif";
+import HealthyFats from "../../../public/HealthyFats.avif";
 export default function UnderstandingMacronutrients() {
     return (
         <>
             <Header />
-
             {/* Hero section */}
             <section className="relative bg-green-800 text-white">
                 <Image
-                    src="/images/macronutrients-hero.avif"
+                    src={HealthyFats}
                     alt="Understanding Macronutrients hero"
                     width={1920}
                     height={600}
@@ -34,7 +36,7 @@ export default function UnderstandingMacronutrients() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">1. The Power of Proteins</h2>
                     <Image
-                        src="/images/macronutrients-proteins.avif"
+                        src={ThePowerofProteins}
                         alt="Proteins"
                         width={800}
                         height={400}
@@ -49,7 +51,7 @@ export default function UnderstandingMacronutrients() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">2. Carbohydrates: Your Energy Source</h2>
                     <Image
-                        src="/images/macronutrients-carbs.avif"
+                        src={Carbohydrates}
                         alt="Healthy carbs"
                         width={800}
                         height={400}
@@ -69,7 +71,7 @@ export default function UnderstandingMacronutrients() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold text-green-900">3. Healthy Fats</h2>
                     <Image
-                        src="/images/macronutrients-fats.avif"
+                        src={HealthyFats}
                         alt="Healthy fats"
                         width={800}
                         height={400}

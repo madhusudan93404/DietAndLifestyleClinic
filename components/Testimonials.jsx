@@ -1,6 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import Image1 from "../public/icon_man1.avif"
+import Image2 from "../public/icon_woman1.avif"
+import Image3 from "../public/icon_woman2.avif"
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -9,19 +12,19 @@ const Testimonials = () => {
     {
       name: "Priya Dhakad",
       role: "Working Professional",
-      image: "/placeholder.svg?height=80&width=80",
+      image: Image2,
       text: "The personalized diet plan helped me lose 15 kg in 6 months. The team at Diet N Life Style Clinic provided excellent support throughout my journey.",
     },
     {
       name: "Chetan Sharma",
       role: "Athlete",
-      image: "/placeholder.svg?height=80&width=80",
+      image: Image1,
       text: "As a professional athlete, proper nutrition is crucial. Their sports nutrition program significantly improved my performance and recovery time.",
     },
     {
       name: "Riya Jain",
       role: "New Mother",
-      image: "/placeholder.svg?height=80&width=80",
+      image: Image3,
       text: "The pregnancy nutrition counseling was invaluable. I had a healthy pregnancy and my baby is thriving thanks to their expert guidance. thank you",
     },
   ]
@@ -48,7 +51,7 @@ const Testimonials = () => {
             </button>
             <div className="bg-white rounded-lg shadow-md p-6 md:p-8 w-full mx-auto max-w-md md:max-w-lg lg:max-w-xl">
               <img
-                  src={testimonials[currentTestimonial].image || "/placeholder.svg"}
+                  src={testimonials[currentTestimonial].image.src || "/placeholder.svg"}
                   alt={testimonials[currentTestimonial].name}
                   className="w-20 h-20 mx-auto mb-4 rounded-full object-cover"
               />
